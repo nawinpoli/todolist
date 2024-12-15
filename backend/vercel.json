@@ -1,7 +1,10 @@
 {
-    "functions": {
-      "api/*.js": {
-        "runtime": "nodejs14.x"
-      }
+  "functions": {
+    "backend/*.js": {
+      "runtime": "nodejs14.x"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/backend/(.*)", "destination": "/backend" }
+  ]
+}
